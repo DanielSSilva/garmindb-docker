@@ -41,6 +41,7 @@ jobs:
         with:
           context: .
           push: true
+          platforms: linux/amd64,linux/arm64
           # Tag format: ghcr.io/OWNER/IMAGE_NAME:TAG
           tags: ghcr.io/danielssilva/garmindb:latest
           # Alternatively, use a commit SHA or version tag:
