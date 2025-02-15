@@ -6,7 +6,8 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Install envsubst via the gettext package
-RUN apk add --no-cache gettext
+# Update package lists and install gettext (envsubst is included)
+RUN apt-get update && apt-get install -y gettext
 
 # Install build dependencies if needed (e.g., if your packages require compilation)
 # RUN apt-get update && apt-get install -y build-essential
