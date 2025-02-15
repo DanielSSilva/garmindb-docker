@@ -27,3 +27,4 @@ RUN chmod +x /app/replace.sh
 # Define the default command to run the application.
 # Adjust the script name if the main module is named differently.
 ENTRYPOINT ["/app/replace.sh"]
+CMD ["-c", "tail -f /dev/null"]
