@@ -8,6 +8,7 @@ ENV PYTHONUNBUFFERED=1
 # Install envsubst via the gettext package
 # Update package lists and install gettext (envsubst is included)
 RUN apt-get update && apt-get install -y gettext
+RUN apt-get update && apt-get install -y cron
 
 # Install build dependencies if needed (e.g., if your packages require compilation)
 # RUN apt-get update && apt-get install -y build-essential
