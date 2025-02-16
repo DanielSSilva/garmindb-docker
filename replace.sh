@@ -5,3 +5,7 @@ envsubst < /root/.GarminDb/GarminConnectConfig.template.json > /root/.GarminDb/G
 
 # Optionally, print the final config for debugging
 cat /root/.GarminDb/GarminConnectConfig.json
+
+# Execute the command passed to the container.
+# If no command is passed, the default CMD (tail) will keep it alive.
+exec "$@"
