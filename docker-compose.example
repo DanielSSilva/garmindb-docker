@@ -1,0 +1,9 @@
+services:
+  garmindb:
+    image: ghcr.io/danielssilva/garmindb:latest
+    volumes:
+      - ./data:/root/HealthData
+    environment:
+      USER: "your@email.com"
+      PASSWORD: "yourpassword"
+      START_DATE: "2024-09-01" # YYYY-MM-DD

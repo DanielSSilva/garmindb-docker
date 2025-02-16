@@ -6,15 +6,15 @@
         "domain": "garmin.com"
     },
     "credentials": {
-        "user": "${APP_USER}",
+        "user": "${USER}",
         "secure_password": false,
-        "password": "${APP_PASSWORD}"
+        "password": "${PASSWORD}"
     },
     "data": {
-        "weight_start_date": "12/31/2023",
-        "sleep_start_date": "12/31/2023",
-        "rhr_start_date": "12/31/2023",
-        "monitoring_start_date": "12/31/2023",
+        "weight_start_date": "${START_DATE}",
+        "sleep_start_date": "${START_DATE}",
+        "rhr_start_date": "${START_DATE}",
+        "monitoring_start_date": "${START_DATE}",
         "download_latest_activities": 25,
         "download_all_activities": 1000
     },
